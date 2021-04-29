@@ -1,10 +1,11 @@
 package gzip
 
 import (
-	"compress/gzip"
 	"net/http"
 	"regexp"
 	"strings"
+
+	gzip "github.com/klauspost/pgzip"
 
 	"github.com/gin-gonic/gin"
 )

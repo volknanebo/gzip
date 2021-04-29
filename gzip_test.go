@@ -2,7 +2,6 @@ package gzip
 
 import (
 	"bytes"
-	"compress/gzip"
 	"fmt"
 	"io/ioutil"
 	"net/http"
@@ -11,6 +10,8 @@ import (
 	"net/url"
 	"strconv"
 	"testing"
+
+	gzip "github.com/klauspost/pgzip"
 
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
